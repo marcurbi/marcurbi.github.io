@@ -4140,10 +4140,17 @@ tbody.collapse.in {
 }
 
 .navbar {
-    position: relative;
+    /*position: relative;
     min-height: 50px;
     margin-bottom: 24px;
-    border: 1px solid transparent
+    border: 1px solid transparent*/
+    position: fixed;
+    top: 0;
+    min-height: 55px;
+    margin-bottom: 24px;
+    z-index: 1001;
+    background: #fff;
+    width: 100%;
 }
 
 .navbar:after,
@@ -4300,7 +4307,7 @@ tbody.collapse.in {
 .navbar-brand {
     font-family: 'Bebas Neue', cursive;
     float: right;
-    padding: 13px 15px;
+    padding: 13px 21px;
     font-size: 30px;
     line-height: 24px;
     height: 50px
@@ -4562,7 +4569,7 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-    background-color: transparent;
+    background-color: #fff;
     border-color: transparent
 }
 
@@ -5674,14 +5681,15 @@ button.close {
 .grid-item,
 .grid-sizer {
     width: 100%;
-    margin-bottom: 1%
+    margin-bottom: 1.5em
 }
 
 @media (min-width:768px) {
 
     .grid-item,
     .grid-sizer {
-        width: 49.5%
+        width: 49.5%;
+        margin-bottom: 1%
     }
 }
 
@@ -5689,7 +5697,8 @@ button.close {
 
     .grid-item,
     .grid-sizer {
-        width: 32.633%
+        width: 32.633%;
+        margin-bottom: 1%
     }
 }
 
@@ -5781,7 +5790,8 @@ main {
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear;
-    padding: 15px;
+    padding: 1.5em;
+    padding-top: 4em;
     height: 100%
 }
 
@@ -5886,7 +5896,7 @@ main {
 }
 
 .navbar-toggle {
-    margin-left: 15px;
+    margin-left: 10px;
     float: left;
     margin-right: 0
 }
